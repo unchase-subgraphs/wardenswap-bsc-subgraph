@@ -1,4 +1,4 @@
-specVersion: 0.0.4
+specVersion: 0.0.5
 description: WardenSwap is a digital asset exchange platform using Blockchain technology available on Binance Smart Chain, Polygon, Ethereum, and other layer 2 rollups.
 repository: https://github.com/unchase-subgraphs/wardenswap-bsc-subgraph
 schema:
@@ -13,7 +13,7 @@ dataSources:
       startBlock: 5705840
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Pair
@@ -39,7 +39,7 @@ templates:
       abi: Pair
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       file: ./src/core.ts
       entities:
